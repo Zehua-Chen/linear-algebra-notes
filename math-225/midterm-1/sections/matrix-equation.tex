@@ -1,0 +1,113 @@
+\section{Matrix Equation}
+  
+  \begin{itemize}
+    \item To show that the equation $ A \vec{x} = b $ does not have solution 
+    for some $ b $, \textbf{reduce $ A $ to show $ A $ does not have a pivot
+    position in every row};
+    \begin{itemize}
+      \item In $ A \vec{x} = b $, if the reduced echelon form of $ A $ has a pivot in 
+      every row, then the system is consistent;
+      \begin{itemize}
+        \item If $ A $ has a pivot in every row, then the augmented matrix cannot
+        have rows like $ \left[ 0 0 0 1 \right] $
+      \end{itemize}
+    \end{itemize}
+    
+    \item Any linear combination of vectors can be always written in the form of 
+    $ A \vec{x} $;
+    \begin{itemize}
+      \item The matrix $ A $ is the coefficients of the systems of vectors;
+    \end{itemize}
+    
+    \item Let $ A $ be $ m \times n $ matrix, then the following statements 
+    are either all true or all false
+    \begin{enumerate}
+      \item For each $ b \in R^{m} $, the equation $ A \vec{x} = b $ has a solution;
+      \item $ \forall b \in R^{m} $, is a linear combination of the columns of $ A $;
+      \item The column of $ A $ spans $ R^{m} $;
+      \item $ A $ has a pivot position in every row;
+    \end{enumerate}
+    
+    \item A solution has a \textbf{non-trivial solution} if there is \textbf{at least one
+    free variable in its solution};
+  \end{itemize}
+
+  \subsection{Matrix Equation}
+  
+    \begin{equation}
+      \begin{bmatrix}
+        a_{1} & a_{2}  \\ 
+        a_{3} & a_{4}  \\ 
+        a_{5} & a_{6} 
+      \end{bmatrix}
+      \times
+      \begin{bmatrix}
+        x_{1} \\ 
+        x_{2} 
+      \end{bmatrix}
+      = 
+      \begin{bmatrix}
+        b_{1} \\ 
+        b_{2} \\ 
+        b_{3}
+      \end{bmatrix}
+    \end{equation}
+    
+    \begin{itemize}
+      \item Number of columns in $ A $ must equal number of rows in $ \vec{x} $
+      for the solution to be defined;
+    \end{itemize}
+    
+  \subsection{Vector Equation}
+    
+    \begin{equation}
+      x_{1} \times 
+      \begin{bmatrix}
+        a_{1} \\ 
+        a_{3} \\ 
+        a_{5}
+      \end{bmatrix}
+      + 
+      x_{2} \times 
+      \begin{bmatrix}
+        a_{2} \\ 
+        a_{4} \\ 
+        a_{6}
+      \end{bmatrix}
+      = 
+      \begin{bmatrix}
+        b_{1} \\ 
+        b_{2} \\ 
+        b_{3}
+      \end{bmatrix}
+    \end{equation}
+  
+    \begin{itemize}
+      \item Another way of writing matrix equation;
+    \end{itemize}
+  
+  \subsection{Row Vector Rule}
+  
+    \begin{itemize}
+      \item For $ A \vec{x} $ to be defined, the number of colunms in $ A $ has to match the amount of 
+      entries in $ \vec{x} $;
+    \end{itemize}
+  
+  \subsection{Homogenous Equation}
+  
+    \begin{equation}
+      A \vec{x} = 0
+    \end{equation}
+    
+    \begin{itemize}
+      \item \textbf{Homogenous equations} are \textbf{always consistent}, since 
+      in $ A \vec{x} = 0 $, there will always be at least one solution 
+      $ \vec{x} = 0 $;
+      
+      \item Homogenous equations gives \textbf{implicit solution set} $ \vec{x} = 0 $;
+      \textbf{Solving the equation} gives the \textbf{explicit solution set} 
+      $ \vec{x} = 0 $;
+      
+      \item Homogenous equation always has at least one \textbf{trivial solution},
+      $ \vec{x} = 0 $;
+    \end{itemize}

@@ -1,0 +1,95 @@
+\section{Determinant}
+
+\paragraph{$ n = 1 $}
+\begin{equation}
+  \determinant 
+  \left( 
+    \begin{bmatrix}
+      a
+    \end{bmatrix}
+  \right) = a
+\end{equation}
+
+\begin{itemize}
+  \item if $ \determinant \left( \left[ a \right] \right) \ne 0 $, then 
+  \highlight{$ \left[ a \right] $ is \textbf{inversible}};
+\end{itemize}
+
+\paragraph{$ n = 2 $}
+
+\begin{equation}
+  \determinant
+  \left( 
+    \begin{bmatrix}
+      a & b \\ 
+      c & d
+    \end{bmatrix}
+  \right) = a \times d - b \times c
+\end{equation}
+
+\paragraph{$ n = 3 $}
+
+\begin{align*}
+  \determinant
+  \left( 
+    \begin{bmatrix}
+      a_{11} & a_{12} & a_{13} \\ 
+      a_{21} & a_{22} & a_{23} \\ 
+      a_{31} & a_{32} & a_{33}
+    \end{bmatrix}
+  \right)
+  &= 
+  a_{11} \times 
+  \begin{bmatrix}
+    a_{22} & a_{23} \\ 
+    a_{32} & a_{33}
+  \end{bmatrix} \\
+  &-
+  a_{12} \times 
+  \begin{bmatrix}
+    a_{21} & a_{23} \\ 
+    a_{31} & a_{33}
+  \end{bmatrix} \\
+  &+
+  a_{13} \times 
+  \begin{bmatrix}
+    a_{21} & a_{22} \\ 
+    a_{31} & a_{32}
+  \end{bmatrix}
+\end{align*}
+
+\paragraph{General}
+
+\begin{align*}
+  \determinant \left( A \right)
+  &= 
+  \sum_{j = 1}^{n} \left( -1 \right)^{i + j} \times a_{i + j} \times A_{i + j} \\
+  &=
+  \sum_{i = 1}^{n} \left( -1 \right)^{i + j} \times a_{i + j} \times A_{i + j}
+\end{align*}
+
+\begin{itemize}
+  \item $ j $: index of column;
+  \item $ i $: index of row;
+\end{itemize}
+
+\paragraph{Another Form}
+
+\begin{displaymath}
+  \determinant 
+  \left(
+    \begin{bmatrix}
+      a_{11} & a_{12} \\ 
+      a_{21} & a_{22}
+    \end{bmatrix}
+  \right) 
+  = 
+  \left|
+    \begin{bmatrix}
+      a_{11} & a_{12} \\ 
+      a_{21} & a_{22}
+    \end{bmatrix}
+  \right|
+\end{displaymath}
+
+  \subsection{Crammer's Rule}

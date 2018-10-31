@@ -1,0 +1,98 @@
+\section{Inverse}
+
+\begin{definition}
+  Say a $ n \times n $ matrix $ A $ is inversible if 
+  \begin{displaymath}
+    \exists B, A \cdot B = I = B \cdot A
+  \end{displaymath}
+\end{definition}
+
+\subsection{Finding Inverse}
+
+  \paragraph{$ n = 1 $}
+  \begin{equation}
+    \begin{bmatrix}
+      a
+    \end{bmatrix}^{-1}
+    =
+    \begin{bmatrix}
+      a^{-1}
+    \end{bmatrix}
+  \end{equation}
+  
+  \paragraph{$ n = 2 $}
+  \begin{equation}
+    \begin{bmatrix}
+      a & b \\ 
+      c & d
+    \end{bmatrix}^{-1}
+    =
+    \begin{bmatrix}
+      d & -b \\ 
+      -c & a
+    \end{bmatrix}
+    \times \frac{1}{a \times d - b \times c}
+  \end{equation}
+  
+  \paragraph{General}
+  \begin{equation}
+    \begin{bmatrix}
+      A I
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      I A^{-1}
+    \end{bmatrix}
+  \end{equation}
+
+\subsection{Properties}
+  
+  \begin{enumerate}
+    \item The \highlight{inverse of inverse is the original matrix}
+    \begin{displaymath}
+      A = \left( A^{-1} \right)^{-1}
+    \end{displaymath}
+    
+    \item If $ A $ is inversible, then \highlight{$ A^{-1} $ is inversible};
+    \item Given $ A, $ that are both inversible:
+    \begin{align*}
+      I &= A \cdot B \cdot B^{-1} \cdot A^{-1} \\ 
+      &= \left( A \cdot B \right) \cdot \left( B^{-1} \cdot A^{-1} \right)
+    \end{align*}
+    
+    \item Transpose and inverses 
+    \begin{align*}
+      I^{T} &= \left( A \cdot A^{-1} \right) \\ 
+      &= \left( A^{-1} A \right)^{T}
+    \end{align*}
+    \begin{align*}
+      I &= A^{T} \cdot \left( A^{-1} \right)^{T} \\ 
+      &= \left( A^{-1} \right)^{T} \cdot A^{T}
+    \end{align*}
+    \begin{align*}
+      \left( A^{T} \right)^{-1} &= \left( A^{-1} \right)^{T} \\ 
+      \left( \left( A \cdot B \right)^{T} \right)^{-1} &= 
+      \left( A^{T} \right)^{-1} \cdot \left( B^{T} \right)^{-1}
+    \end{align*}
+    
+    \item Given $ A $ is inversible:
+    \begin{enumerate}
+      \item $ A \cdot x = b $ is \highlight{consistent 
+      $ \forall b \in \mathbb{R}^{n} $}
+      
+      \item $ A \cdot x = 0 $ \highlight{only \textbf{trivial solution}};
+      
+      \item \highlight{Columns and rows} of $ A $ are 
+      linearly independent vectors in $ \mathbb{R}^{n} $
+      
+      \item $ A $ is linearly independent;
+      
+      \item $ \left[ A b \right] $ \highlight{never reduces to 
+      $ \left[ 0...0 x \right] $ (augmented matrix)};
+      
+      \item After being reduced to echelon forms, 
+      \highlight{all rows and columns of $ A $ have pivots};
+      
+      \item The \highlight{reduced echelon form of $ A $ is $ I $}
+    \end{enumerate}
+  \end{enumerate}

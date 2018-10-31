@@ -1,0 +1,40 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[landscape, margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\col}{Col}
+\DeclareMathOperator{\determinant}{det}
+
+\usepackage[english]{babel}
+
+\newtheorem{definition}{Definition}
+
+\usepackage[colorlinks]{hyperref}
+
+\newcommand{\highlight}[1]{{\color{red} #1}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+  \begin{titlepage}
+    {\LARGE Math 225} \\ 
+    {\large Midterm 2 Reivew}
+    \vfill 
+    Compiled on \today
+  \end{titlepage}
+  
+  \begin{multicols}{3}
+    \input{topics/transpose}
+    \input{topics/inverse}
+    \input{topics/elementary_matrices}
+    \input{topics/determinant}
+    \input{topics/vectorspace}
+  \end{multicols}
+\end{document}

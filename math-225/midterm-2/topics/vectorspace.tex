@@ -1,0 +1,69 @@
+\section{Vector Space}
+
+\begin{definition}
+  A vector space is a \highlight{collection of \textbf{vectors}}.
+\end{definition}
+
+\subsection{Subspace}
+  
+  Given $ W \subset V $, $ W $ is a subspace if 
+  \begin{displaymath}
+    \begin{cases}
+      \forall u, v \in W, u + v \in W \\ 
+      \forall c \in \mathbb{R}, \forall u \in W, c \times W \\ 
+      \vec{0} \in W
+    \end{cases}
+  \end{displaymath}
+  
+  \subsubsection{Properties}
+    \begin{enumerate} 
+      % Span
+      \item The vector space $ W $, defined as 
+      \begin{displaymath}
+        W = \spn \{ \vec{v}_{1}, \vec{v}_{2}, \vec{v}_{3} \}
+      \end{displaymath}
+      $ W $ is always a subspace of $ X $
+      
+      % Trivial Solution
+      \item The \highlight{trivial solution is always in} null space, 
+      or \highlight{any other subspaces}.
+      
+      % Shortcut
+      \item $ \spn \{ \vec{v}_{1}, \vec{v}_{2} ... \} $ is a 
+      \highlight{subspace of $ V $ if $ \vec{v}_{1}, \vec{v}_{2} ... \in V $};
+    \end{enumerate}
+    
+\subsection{Column Space}
+  
+  \begin{definition}
+    Given a matrix $ A \left( m \times n \right) $, \highlight{a column space 
+    $ \col \left( A \right ) $ is $ \spn \{ \text{columns of } A \} $}
+  \end{definition}
+  
+  \begin{displaymath}
+    \col \left( A \right) = \{ \vec{b}, A \cdot \vec{x} = \vec{b} \}
+  \end{displaymath}
+  
+  \subsubsection{Properties}
+  
+    \begin{enumerate}
+      \item A column space of $ A $ is 
+      \highlight{a subsapce of $ R^{m} $, where $ m $}
+      is the height of $ A $;
+    \end{enumerate}
+    
+\subsection{Null Space}
+
+  \begin{definition}
+    Given a matrix $ A \left( m \times n \right) $, a null space 
+    is the \highlight{collectino of all vectors $ x $, such that 
+    $ A \cdot \vec{x} = 0 $}
+  \end{definition}
+  
+  \subsubsection{Properties}
+  
+    \begin{enumerate}
+      \item A null space of $ A $ is 
+      \highlight{a subsapce of $ R^{n} $ where $ n $ is the width 
+      of $ A $};
+    \end{enumerate}

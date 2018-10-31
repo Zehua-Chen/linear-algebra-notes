@@ -1,0 +1,12 @@
+{
+    "editor.tabSize": 2,
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.log": true,
+        "**/*.out": true,
+        "**/*.toc": true
+    }
+}

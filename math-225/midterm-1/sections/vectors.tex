@@ -1,0 +1,109 @@
+\section{Vectors}
+  
+\subsection{Linear Combinations}
+
+\paragraph{Graphical Thinking}
+  
+  \begin{itemize}
+    \item A vector is a point;
+    \item A vector multiplied by a weight is a point \textbf{stretched};
+    \item A few cectors multiplied by a few weights added together can reach a point,
+    which is called \textbf{linear combination};
+    \item \textbf{Span} is the collection of all possible \textbf{linear combinations},
+    in another word, all possible points reachable by adding a set of vectors,
+    multiplied by the correct weight;
+  \end{itemize}
+
+  \paragraph{Mathmetic Thinking}
+
+  \begin{itemize}
+    \defitem{Linear Combination}
+    {An expression constructed from a set of terms by multiplying each term
+    by a constant and adding the results};
+    \begin{itemize}
+      \item To say $ b $ is a linear combination of $ a_{1}, a_{2}, a_{1} $
+      is to say that there are weights (\textbf{multipliers}) $ x_{1}, x_{2}, x_{3} $ such that 
+      $ a_{1} \cdot x_{1} + a_{2} \cdot x_{2} + a_{3} \cdot x_{3} = b $;
+      \begin{displaymath}
+        a_{1} =
+        \begin{bmatrix}
+          ? \\
+          ? \\ 
+          ? \\
+        \end{bmatrix},
+        a_{2} = 
+        \begin{bmatrix}
+          ? \\
+          ? \\ 
+          ? \\
+        \end{bmatrix},
+        a_{3} = 
+        \begin{bmatrix}
+          ? \\
+          ? \\ 
+          ? \\
+        \end{bmatrix}
+      \end{displaymath}
+    \end{itemize}
+    
+    \defitem{Span}{All possible linear combinations};
+    \item A system has solution if $ b \in span \{ a_{1} ... a_{n} \} $
+    \begin{itemize}
+      \item In another word, $ b $ is one of the possible linear combinations,
+      which means that there are values of $ x_{1} ... x_{n} $ such that:
+      \begin{displaymath}
+        x_{1} \cdot a_{1} + ... + x_{n} \cdot a_{n} = b
+      \end{displaymath}
+      which means that there is a solution;
+    \end{itemize}
+  \end{itemize}
+  
+
+  
+\subsection{Span in Different Dimensions}
+
+  \subsubsection{Two Dimension}
+  
+  \begin{align}
+    span \{ \vec{a} \} &= \mathbb{R} \\ 
+    span \{ \vec{a_{1}}, \vec{a_{2}} \} &= 
+    \begin{cases}
+      \mathbb{R} \\ 
+      \mathbb{R}^{2}
+    \end{cases}
+    \\
+    span \{ \vec{a_{1}}, \vec{a_{2}}, ... \} &= 
+    \begin{cases}
+      \mathbb{R} \\ 
+      \mathbb{R}^{2}
+    \end{cases}
+  \end{align}
+  \begin{itemize}
+    \item By adding two vectors (\textbf{esentially two points}) which are multiplied by the 
+    correct weight $ \{ x_{1}, x_{2}, ... \} $, any points
+    on the plane can be reached, denoted by $ \mathbb{R}^{2} $;
+  \end{itemize}
+  \subsubsection{Three Dimension}
+  
+  \begin{align}
+    span \{ \vec{a} \} &= \mathbb{R} \\ 
+    span \{ \vec{a_{1}}, \vec{a_{2}} \} &= 
+    \begin{cases}
+      \mathbb{R} \\ 
+      \mathbb{R}^{2}
+    \end{cases}
+    \\
+    span \{ \vec{a_{1}}, \vec{a_{2}}, \vec{a_{3}} \} &= 
+    \begin{cases}
+      \mathbb{R} \\ 
+      \mathbb{R}^{2} \\ 
+      \mathbb{R}^{3}
+    \end{cases}
+    \\
+    span \{ \vec{a_{1}}, \vec{a_{2}}, \vec{a_{3}}, ... \} &= 
+    \begin{cases}
+      \mathbb{R} \\ 
+      \mathbb{R}^{2} \\ 
+      \mathbb{R}^{3}
+    \end{cases}
+  \end{align}
