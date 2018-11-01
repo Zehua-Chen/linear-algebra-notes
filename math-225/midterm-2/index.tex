@@ -24,9 +24,16 @@
 \DeclareMathOperator{\determinant}{det}
 \DeclareMathOperator{\abs}{abs}
 
-\usepackage[colorlinks]{hyperref}
+% For book mark and table of contents links
+\usepackage[bookmarks]{hyperref}
 
-\newcommand{\highlight}[1]{{\color{red} #1}}
+% For colored texts
+\usepackage{xcolor}
+
+% Apple's Blue Color Under Aqua Theme 
+% R = 0, % G = 122, B = 255
+\definecolor{appleblue}{rgb}{0, 0.478, 1}
+\newcommand{\highlight}[1]{{\textcolor{appleblue}{#1}}}
 
 \setlength{\parindent}{0pt}
 
@@ -34,11 +41,16 @@
   \begin{titlepage}
     {\LARGE Math 225} \\ 
     {\large Midterm 2 Reivew}
+    % Table of Contents
+    \begin{multicols}{3}
+      \tableofcontents
+    \end{multicols}
     \vfill 
-    Compiled on \today
+    Updated on November 1, 107
   \end{titlepage}
   
   \begin{multicols}{3}
+    \input{topics/special_matrices}
     \input{topics/linearly_independence}
     \input{topics/multiplication}
     \input{topics/transpose}
