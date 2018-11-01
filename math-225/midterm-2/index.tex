@@ -1,9 +1,20 @@
 \documentclass[11pt, letterpaper]{article}
+  
+% Has to be put before geometry include, otherwise cause compiler error.
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
 
 \usepackage[landscape, margin=1in]{geometry}
 \usepackage{multicol}
-\usepackage{newtxtext}
+% \usepackage{newtxtext}
 \usepackage{newtxmath}
+% Use helvetica font
+\usepackage[scaled]{helvet}
+
+\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage{amsmath}
 \usepackage{amsbsy}
@@ -12,10 +23,6 @@
 \DeclareMathOperator{\col}{Col}
 \DeclareMathOperator{\determinant}{det}
 \DeclareMathOperator{\abs}{abs}
-
-\usepackage[english]{babel}
-
-\newtheorem{definition}{Definition}
 
 \usepackage[colorlinks]{hyperref}
 
@@ -32,6 +39,8 @@
   \end{titlepage}
   
   \begin{multicols}{3}
+    \input{topics/linearly_independence}
+    \input{topics/multiplication}
     \input{topics/transpose}
     \input{topics/inverse}
     \input{topics/elementary_matrices}

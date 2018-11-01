@@ -114,6 +114,20 @@
 
   \subsection{Crammer's Rule}
   
+    \begin{definition}
+      For a unique solution $ \vec{x} $ to $ A \cdot x = b $, when $ A $ 
+      is $ n \times n $, and invertible.
+      \begin{align}
+        \begin{bmatrix}
+          x_{1} \\ 
+          x_{2} \\ 
+          x_{3}
+        \end{bmatrix}
+        = x &= A^{-1} \cdot b \\
+        x_{i} &= \frac{ \left| A_{i} \left( b \right) \right| }{ \left| A \right| }
+      \end{align}  
+    \end{definition}
+  
     \paragraph{Terminology}
     \begin{equation}
       A_{i} \left( b \right) = 
@@ -126,19 +140,10 @@
       \item b should be a matrix of size $ m \times 1 $;
     \end{itemize}
     
-    \begin{definition}
-      For a unique solution $ \vec{x} $ to $ A \cdot x = b $, when $ A $ 
-      is $ n \times n $, and invertible.
-      \begin{align}
-        \begin{bmatrix}
-          x_{1} \\ 
-          x_{2} \\ 
-          x_{3}
-        \end{bmatrix}
-        x &= A^{-1} \cdot b \\
-        x_{i} &= \frac{ \left| A_{i} \left( b \right) \right| }{ \left| A \right| }
-      \end{align}  
-    \end{definition}
+    \paragraph{Questions that Use Crammer's Rule}
+    \begin{enumerate}
+      \item Assignment 6, Question 2;
+    \end{enumerate}
     
   \subsection{Area}
   
