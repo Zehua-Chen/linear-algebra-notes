@@ -1,0 +1,55 @@
+\documentclass[11pt, letterpaper]{article}
+  
+% Has to be put before geometry include, otherwise cause compiler error.
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\usepackage[landscape, margin=1in]{geometry}
+\usepackage{multicol}
+% \usepackage{newtxtext}
+\usepackage{newtxmath}
+% Use helvetica font
+\usepackage[scaled]{helvet}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\col}{Col}
+\DeclareMathOperator{\determinant}{det}
+\DeclareMathOperator{\abs}{abs}
+\DeclareMathOperator{\adj}{adj}
+
+% For book mark and table of contents links
+\usepackage[bookmarks]{hyperref}
+
+% For colored texts
+\usepackage{xcolor}
+
+% Apple's Blue Color Under Aqua Theme 
+% R = 0, % G = 122, B = 255
+\definecolor{appleblue}{rgb}{0, 0.478, 1}
+\newcommand{\highlight}[1]{{\textcolor{appleblue}{#1}}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+  \begin{titlepage}
+    {\LARGE Math 225} \\ 
+    {\large Midterm 2 Reivew}
+    % Table of Contents
+    \begin{multicols}{3}
+      \tableofcontents
+    \end{multicols}
+    \vfill 
+    Updated on November 1, 107
+  \end{titlepage}
+  
+  \begin{multicols}{3}
+  \end{multicols}
+\end{document}
