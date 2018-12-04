@@ -92,4 +92,61 @@
   \right|
 \end{displaymath}
 
+  \subsection{Row Operations and Signs}
+  
+  \begin{displaymath}
+    \begin{cases}
+      k \times \left| A \right|, \text{multiply row by } k \\
+      \left( -1 \right) \times \left| A \right|, \text{switch rows} \\ 
+      \left| A \right|, i = i + k \times j
+    \end{cases}
+  \end{displaymath}
+  
+  \subsection{Properties}
+  
+  \begin{align*}
+    \left| A^{T} \right| &= \left| A \right| \\ 
+    \left| A \cdot B \right| &= \left| A \right| \cdot \left| A \right| \\ 
+    \left| A + B \right| &\ne \left| A \right| + \left| A \right| \\ 
+    \left| A^{-1} \right| &= \left| A \right|^{-1} \\
+    &= \frac{1}{\left| A \right|}
+  \end{align*}
+
   \subsection{Crammer's Rule}
+  
+    \begin{definition}
+      For a unique solution $ \vec{x} $ to $ A \cdot x = b $, when $ A $ 
+      is $ n \times n $, and invertible.
+      \begin{align}
+        \begin{bmatrix}
+          x_{1} \\ 
+          x_{2} \\ 
+          x_{3}
+        \end{bmatrix}
+        = x &= A^{-1} \cdot b \\
+        x_{i} &= \frac{ \left| A_{i} \left( b \right) \right| }{ \left| A \right| }
+      \end{align}  
+    \end{definition}
+  
+    \paragraph{Terminology}
+    \begin{equation}
+      A_{i} \left( b \right) = 
+      \begin{bmatrix}
+        \text{Replace column $ i $ with b}
+      \end{bmatrix}
+    \end{equation}
+    
+    \begin{itemize}
+      \item b should be a matrix of size $ m \times 1 $;
+    \end{itemize}
+    
+    \paragraph{Questions that Use Crammer's Rule}
+    \begin{enumerate}
+      \item Assignment 6, Question 2;
+    \end{enumerate}
+    
+  \subsection{Area}
+  
+    \begin{equation}
+      Area, Volume = \abs \left( \left| \vec{a}_{1}, \vec{a}_{2}, ... \right| \right)
+    \end{equation}

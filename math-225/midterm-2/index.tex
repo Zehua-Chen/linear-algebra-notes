@@ -1,9 +1,20 @@
 \documentclass[11pt, letterpaper]{article}
+  
+% Has to be put before geometry include, otherwise cause compiler error.
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
 
 \usepackage[landscape, margin=1in]{geometry}
 \usepackage{multicol}
-\usepackage{newtxtext}
+% \usepackage{newtxtext}
 \usepackage{newtxmath}
+% Use helvetica font
+\usepackage[scaled]{helvet}
+
+\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage{amsmath}
 \usepackage{amsbsy}
@@ -11,14 +22,19 @@
 \DeclareMathOperator{\spn}{span}
 \DeclareMathOperator{\col}{Col}
 \DeclareMathOperator{\determinant}{det}
+\DeclareMathOperator{\abs}{abs}
+\DeclareMathOperator{\adj}{adj}
 
-\usepackage[english]{babel}
+% For book mark and table of contents links
+\usepackage[bookmarks]{hyperref}
 
-\newtheorem{definition}{Definition}
+% For colored texts
+\usepackage{xcolor}
 
-\usepackage[colorlinks]{hyperref}
-
-\newcommand{\highlight}[1]{{\color{red} #1}}
+% Apple's Blue Color Under Aqua Theme 
+% R = 0, % G = 122, B = 255
+\definecolor{appleblue}{rgb}{0, 0.478, 1}
+\newcommand{\highlight}[1]{{\textcolor{appleblue}{#1}}}
 
 \setlength{\parindent}{0pt}
 
@@ -26,13 +42,21 @@
   \begin{titlepage}
     {\LARGE Math 225} \\ 
     {\large Midterm 2 Reivew}
+    % Table of Contents
+    \begin{multicols}{3}
+      \tableofcontents
+    \end{multicols}
     \vfill 
-    Compiled on \today
+    Updated on November 1, 107
   \end{titlepage}
   
   \begin{multicols}{3}
+    \input{topics/special_matrices}
+    \input{topics/linearly_independence}
+    \input{topics/multiplication}
     \input{topics/transpose}
     \input{topics/inverse}
+    \input{topics/adjugate}
     \input{topics/elementary_matrices}
     \input{topics/determinant}
     \input{topics/vectorspace}
