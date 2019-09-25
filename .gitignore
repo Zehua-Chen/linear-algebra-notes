@@ -243,3 +243,6 @@ TSWLatexianTemp*
 
 # macOS Generated Files
 .DS_Store
+
+# VSCode Files
+.vscode/
