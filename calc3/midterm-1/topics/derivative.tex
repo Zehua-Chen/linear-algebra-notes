@@ -2,10 +2,27 @@
 
   \subsection{Chain Rule}
 
+    Given $ h(t) $
+    \begin{displaymath}
+      h(t) = f(x(t), y(t))
+    \end{displaymath}
+
     \begin{align}
-      h(t) &= f(x(t), y(t)) \\
-      h'(0) &= f_{x}(x(0), y(0)) x'(a) + f_{y}(x(0), y(0)) y'(a)
+      h'(t)
+        &= f_{x}\left( x(t), y(t) \right) x'(t)
+        + f_{y} \left(x(t), y(t) \right) y'(t) \\
+      \frac{dh}{dt}
+        &= \frac{df}{dx} \frac{dx}{dt}
+        + \frac{df}{dy} \frac{dy}{dt}
     \end{align}
+
+    For more dimensions
+    \begin{equation}
+      \frac{dh}{dt}
+        = \frac{df}{dx} \frac{dx}{dt}
+        + \frac{df}{dy} \frac{dy}{dt}
+        + \frac{df}{dz} \frac{dz}{dt}
+    \end{equation}
 
   \subsection{Colaence Theorem}
 

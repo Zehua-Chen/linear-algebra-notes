@@ -1,0 +1,51 @@
+\section{Gradient}
+
+  Given $ f: \mathbb{R}^{2} \to \mathbb{R} $, the \textbf{gradient} is
+
+  \begin{align}
+    \nabla f \left( a, b \right) =
+    \left(
+      \frac{df}{dx} \left( a, b \right),
+      \frac{df}{dy} \left( a, b \right)
+    \right)
+  \end{align}
+
+  \subsection{Directional Derivative}
+
+    The \textbf{directional derivative} (pointing in $ \vec{v} $) is
+
+    \begin{equation}
+      D_{\vec{v}} f \left( a, b \right) =
+      \nabla f \left( a, b \right) \cdot \vec{v}
+    \end{equation}
+
+    Given a unit vector $ \vec{u} $ and an angle between
+    $ \nabla f \left( a, b \right) $ and $ \vec{u} $
+
+    \begin{align*}
+      D_{\vec{u}} f \left( a, b \right) &=
+      \nabla f \left( a, b \right) \cdot \vec{u} \\
+      &= \left| \nabla f \left( a, b \right) \right|
+      \left| \vec{u} \right| \cos\theta \\
+      &= \left| \nabla f \left( a, b \right) \right| \cos\theta
+    \end{align*}
+
+  \subsection{Geometric Meaning}
+
+    Gradient points to the direction of maximum increase of a function:
+
+    \begin{itemize}
+      \item The maximum rate of change at $ \left( x, y \right) $
+      occurs in the direction of $ \nabla f \left( x, y \right) $
+      \item The maxium rate of change at $ \left( x, y \right) $  is
+      $ \left| \nabla f \left( x, y \right) \right| $
+      \item $ \nabla f \left( x, y \right) $ is $ 0 $ at local maximum or
+      local minimum
+      \item $ - \nabla f \left( x, y \right) $ points to the direction
+      in which the vector decreases most repidly
+    \end{itemize}
+
+  \subsection{Tangent Plane}
+
+    The gradient vector of a shape at a point $ (x, y) $ is the normal
+    vector for the tangent planet at the point $ (x, y) $.
