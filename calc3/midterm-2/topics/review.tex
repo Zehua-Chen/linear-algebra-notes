@@ -1,1 +1,37 @@
 \section{Review}
+
+  \subsection{Taylor for 2D}
+
+    \begin{equation}
+      f\left( x_{0} + h \right)
+        = f\left( x_{0} \right)
+        + f'\left( x_{0} \right) h
+        + \frac{f''\left( x_{0} \right)}{2} h^{2}
+        + E\left( h \right)
+    \end{equation}
+
+    where $ E\left( h \right) $ is reall small:
+
+    \begin{equation}
+      \lim_{h \to 0} \frac{E\left( h \right)}{h^{2}} = 0
+    \end{equation}
+
+    if $ x_{0} $ is a critical point, then
+
+    \begin{equation}
+      f\left( x_{0} + h \right)
+        = f\left( x_{0} \right)
+        + \frac{f''\left( x_{0} \right)}{2} h^{2}
+        + E\left( h \right)
+    \end{equation}
+
+  \subsection{Talyor for 3D}
+
+    \begin{align*}
+      f\left( x_{0} + h, y_{0} + k \right)
+        &= f\left( x_{0}, y_{0} \right)
+        + f_{x}\left( x_{0}, y_{0} \right) h
+        + f_{y}\left( x_{0}, y_{0} \right) k \\
+        &+ ah^{2} + bhk + ck^{2}
+        + E\left( h, k \right)
+    \end{align*}

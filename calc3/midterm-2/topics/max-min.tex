@@ -1,0 +1,49 @@
+\section{Max and Min}
+
+  A critical points can be any of the followings:
+  \begin{itemize}
+    \item Absolute/Local Min
+    \item Absolute/Local Max
+    \item Saddle
+  \end{itemize}
+
+  \subsection{Critical Points}
+
+    A point $ \left( a, b \right) $ is a critical point if
+    \begin{equation}
+      \nabla f \left( a, b \right) = 0
+    \end{equation}
+
+  \subsection{Local Extreme: Second Derivative Test}
+
+    \begin{equation}
+      D =
+      \left|
+        \begin{bmatrix}
+          f_{xx} (a, b) & f_{xy} (a, b) \\
+          f_{xy} (a, b) & f_{yy} (a, b)
+        \end{bmatrix}
+      \right|
+    \end{equation}
+
+    \begin{itemize}
+      \item if $ D > 0 $
+      \begin{itemize}
+        \item $ f_{xx} (a, b) > 0 $, then $ (a, b) $ is a \textbf{local min}
+        \item $ f_{xx} (a, b) < 0 $, then $ (a, b) $ is a \textbf{local max}
+      \end{itemize}
+
+      \item if $ D < 0 $, then $ (a, b) $ is a \textbf{saddle}
+    \end{itemize}
+
+  \subsection{Absolute Extreme: Extreme Value Theorem}
+
+    Suppose $ f $ is continuous, on $ \left[ a, b \right] = \{ a \le x \le b \} $,
+    then $ f $ has both an absolute minimum and an absolute maximum in
+    $ \left[ a, b \right] $
+
+    The absolute extremes occur at
+    \begin{itemize}
+      \item A critical point of $ f $
+      \item One of $ a, b $
+    \end{itemize}
