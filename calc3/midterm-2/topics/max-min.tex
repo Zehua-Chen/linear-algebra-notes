@@ -31,7 +31,7 @@
       \left|
         \begin{bmatrix}
           f_{xx} (a, b) & f_{xy} (a, b) \\
-          f_{xy} (a, b) & f_{yy} (a, b)
+          f_{yx} (a, b) & f_{yy} (a, b)
         \end{bmatrix}
       \right|
     \end{equation}
@@ -48,6 +48,21 @@
 
   \subsection{Absolute Extreme: Extreme Value Theorem}
 
+    Given a \textbf{continuous} $ f $, and a \textbf{bounded and closed}
+    shape $ D $ (domain).
+
+    \begin{itemize}
+      \item \textbf{Bound}: $ D $'s values are in a non-infinite range
+      \item \textbf{Closed}: if the shape has boundary points are included
+      \begin{itemize}
+        \item \textbf{Not Closed}: $ x^{2} + y^{2} < 9 $
+        \item \textbf{Closed}: $ x^{2} + y^{2} \le 9 $
+        \item \textbf{Closed}: $ x^{2} + y^{2} \ge 9 $
+      \end{itemize}
+
+      \item \textbf{Bound} and \textbf{closed} are independent
+    \end{itemize}
+
     Suppose $ f $ is continuous, on $ \left[ a, b \right] = \{ a \le x \le b \} $,
     then $ f $ has both an absolute minimum and an absolute maximum in
     $ \left[ a, b \right] $
@@ -57,6 +72,15 @@
       \item A critical point of $ f $
       \item One of $ a, b $
     \end{itemize}
+
+    \subsubsection{Boundary Points}
+
+      A point on a function such that a circle with an arbitrary radius
+      can be drawn at the point and still includes area on both sides of the
+      function.
+
+      In other words, boundary points are points on the line formed by the
+      function.
 
     \subsubsection{Boundary Lines}
 
@@ -84,6 +108,9 @@
       \begin{displaymath}
         g: \mathbb{R}^{n - 1} \to \mathbb{R}
       \end{displaymath}
+      \begin{itemize}
+        \item Can also be $ D $ from \textbf{extreme value theorem}
+      \end{itemize}
     \end{itemize}
 
     The maximum and minimum values happen at points where $ g $ and $ f $
@@ -107,6 +134,10 @@
       and $ g $ are tangent (touch) each other and these points
       \textbf{can be extreme values}
 
+      \begin{itemize}
+        \item Still needs to compute $ \nabla f $ to find all extreme values
+      \end{itemize}
+
     \subsubsection{Solve Lagrange Multipliers}
 
       \begin{displaymath}
@@ -115,3 +146,28 @@
 
       Try find $ \lambda $, and then use $ \lambda $ to find the values
       of $ x, y, ... $, which are the cirtical points.
+
+      \paragraph{Ex}
+      \begin{displaymath}
+        \begin{cases}
+          2x + 2 = \lambda 2 x \\
+          2y + 2 = \lambda 2 y
+        \end{cases}
+      \end{displaymath}
+
+      \begin{align*}
+        \lambda &= \frac{x + 1}{x} = 1 + \frac{1}{x} \\
+        \lambda &= \frac{y + 1}{y} = 1 + \frac{1}{y} \\
+        x &= y
+      \end{align*}
+
+      Given
+      \begin{displaymath}
+        x^{2} + y^{2} = 9
+      \end{displaymath}
+
+      \begin{align*}
+        2x^{2} &= 9 \\
+        x^{2} &= \frac{9}{2} \\
+        x &= \pm \frac{3\sqrt{2}}{2}
+      \end{align*}
