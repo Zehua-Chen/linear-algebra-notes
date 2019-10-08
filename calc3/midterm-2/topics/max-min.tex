@@ -49,49 +49,49 @@
   \subsection{Absolute Extreme: Extreme Value Theorem}
 
     Given a \textbf{continuous} $ f $, and a \textbf{bounded and closed}
-    shape $ D $ (domain).
-
-    \begin{itemize}
-      \item \textbf{Bound}: $ D $'s values are in a non-infinite range
-      \item \textbf{Closed}: if the shape has boundary points are included
-      \begin{itemize}
-        \item \textbf{Not Closed}: $ x^{2} + y^{2} < 9 $
-        \item \textbf{Closed}: $ x^{2} + y^{2} \le 9 $
-        \item \textbf{Closed}: $ x^{2} + y^{2} \ge 9 $
-      \end{itemize}
-
-      \item \textbf{Bound} and \textbf{closed} are independent
-    \end{itemize}
-
-    Suppose $ f $ is continuous, on $ \left[ a, b \right] = \{ a \le x \le b \} $,
-    then $ f $ has both an absolute minimum and an absolute maximum in
-    $ \left[ a, b \right] $
-
-    The absolute extremes occur at
+    shape $ D $ (domain in $ \mathbb{R} $), $ f $ has both an absolute minimum
+    and an absolute maximum in $ D $ at the followings:
     \begin{itemize}
       \item A critical point of $ f $
-      \item One of $ a, b $
+      \item On the boundaries of $ D $
     \end{itemize}
 
-    \subsubsection{Boundary Points}
+    \subsubsection{Bound and Closed}
 
-      A point on a function such that a circle with an arbitrary radius
-      can be drawn at the point and still includes area on both sides of the
-      function.
-
-      In other words, boundary points are points on the line formed by the
-      function.
-
-    \subsubsection{Boundary Lines}
-
-      For 3D graphs, the boundaries are not a point, but a line. Therefore,
-      to find the absolute extremes, the following points on the line must be
-      tested
       \begin{itemize}
-        \item Start
-        \item End
-        \item Critical point of the line
+        \item \textbf{Bound}: $ D $'s values are in a non-infinite range
+        \item \textbf{Closed}: if the shape has boundary points are included
+        \begin{itemize}
+          \item \textbf{Not Closed}: $ x^{2} + y^{2} < 9 $
+          \item \textbf{Closed}: $ x^{2} + y^{2} \le 9 $
+          \item \textbf{Closed}: $ x^{2} + y^{2} \ge 9 $
+        \end{itemize}
+
+        \item \textbf{Bound} and \textbf{closed} are independent
       \end{itemize}
+
+      \subsubsection{Boundary Points}
+
+        A point on a function such that a circle with an arbitrary radius
+        can be drawn at the point and still includes area on both sides of the
+        function.
+
+        In other words, boundary points are points on the line formed by the
+        function.
+
+      \subsubsection{Finding the Absolute Extremes}
+
+        \begin{enumerate}
+          \item Find all critical points of $ f $ in $ D $ and determine
+          the values at these critical points
+          \item Find the extremes of the function on the boundary:
+          \begin{itemize}
+            \item Start and end of the boundary, if applicable
+            \item Critial points of the boundary
+          \end{itemize}
+
+          \item The max and min of the previous steps are the extremes
+        \end{enumerate}
 
   \subsection{Constrained Optimization}
 
