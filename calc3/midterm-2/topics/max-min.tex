@@ -69,24 +69,49 @@
         \item Critical point of the line
       \end{itemize}
 
-  \subsection{Larange Multipliers}
+  \subsection{Constrained Optimization}
 
-    Given a function $ f $ and its constraint $ g $, larange multipliers can
-    be used to find the critical points of $ f $, if $ \nabla g \ne 0 $
+    \textbf{Constrained optimization}: finding the extreme values on $ f $,
+    bound by (aka. subject to) $ g $
 
     \begin{itemize}
-      \item In some cases only some of the critical points can be found
+      \item The function to optimize:
+      \begin{displaymath}
+        f: \mathbb{R}^{n} \to \mathbb{R}
+      \end{displaymath}
+
+      \item The constraint: limits the possible inputs of $ f $
+      \begin{displaymath}
+        g: \mathbb{R}^{n - 1} \to \mathbb{R}
+      \end{displaymath}
     \end{itemize}
 
-    \begin{align}
-      \nabla f\left( ... \right) &= \lambda \nabla g\left( ... \right) \\
-      \nabla f\left( ... \right) - \lambda \nabla g\left( ... \right) &= 0
-    \end{align}
+    The maximum and minimum values happen at points where $ g $ and $ f $
+    are \textbf{tangent}
 
-    This should give something like the following
-    \begin{displaymath}
-      ax = \lambda bx, cy = \lambda dy, ...
-    \end{displaymath}
+    \subsubsection{Larange Multipliers}
 
-    Try find $ \lambda $, and then use $ \lambda $ to find the values
-    of $ x, y, ... $, which are the cirtical points.
+      Given a function $ f $ and its constraint $ g $, and extreme values
+      happen at points where $ f $ and $ g $ are tangent, the gradient values
+      of $ g $ and $ f $ should at least point to the same direction.
+
+      When two vectors to the same same direction, they are
+      \textbf{proportional}.
+
+      \begin{align}
+        \nabla f\left( ... \right) &= \lambda \nabla g\left( ... \right) \\
+        \nabla f\left( ... \right) - \lambda \nabla g\left( ... \right) &= 0
+      \end{align}
+
+      With this equation, we would be able to find the points where $ f $
+      and $ g $ are tangent (touch) each other and these points
+      \textbf{can be extreme values}
+
+    \subsubsection{Solve Lagrange Multipliers}
+
+      \begin{displaymath}
+        ax = \lambda bx, cy = \lambda dy, ...
+      \end{displaymath}
+
+      Try find $ \lambda $, and then use $ \lambda $ to find the values
+      of $ x, y, ... $, which are the cirtical points.
