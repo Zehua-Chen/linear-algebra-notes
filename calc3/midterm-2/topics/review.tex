@@ -45,3 +45,21 @@
   \subsection{Integration}
 
     \subsubsection{U-Subtitution}
+
+      \begin{displaymath}
+        \int \left( 3x^{2} + 2x \right) e^{\left( x^{3} + x^{2} \right)} dx
+      \end{displaymath}
+
+      \begin{align*}
+        u &= x^{3} + x^{2} \\
+        du &= 3x^{2} + 2x dx \\
+        \frac{du}{3x^{2} + 2x} &= dx
+      \end{align*}
+
+      Plugin $ u $ and $ dx $ back in
+
+      \begin{align*}
+        &\int \left( 3x^{2} + 2x \right) e^{\left( x^{3} + x^{2} \right)} dx \\
+        &= \int \left( 3x^{2} + 2x \right) e^{u} \frac{du}{3x^{2} + 2x} \\
+        &= \int e^{u} du
+      \end{align*}
