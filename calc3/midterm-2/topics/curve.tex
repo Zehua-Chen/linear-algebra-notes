@@ -21,7 +21,7 @@
       \item $ \left| \vec{r}'\left( t \right) \right| $: length of $ r' $
     \end{itemize}
 
-  \subsection{Area Under Curve}
+  \subsection{Integral}
 
     \begin{equation}
       A = \int_{c} fds = \int_{a}^{b} f\left( \vec{r}(t) \right) \left| \vec{r}'(t) \right| dt
@@ -37,3 +37,22 @@
     \begin{equation}
       \text{Average} = \frac{\text{Area}}{\text{Length}}
     \end{equation}
+
+  \subsection{Mass}
+
+    \begin{equation}
+      m = \int_{a}^{b} p
+      \left(
+        x\left( t \right),
+        y\left( t \right),
+        z\left( t \right)
+      \right) \left| \vec{r}'(t) \right| dt
+    \end{equation}
+
+  \subsection{Center of Mass}
+
+    \begin{align}
+      \overline{x} &= \frac{1}{m} \int_{c} x p\left( x, y, z \right) ds \\
+      \overline{y} &= \frac{1}{m} \int_{c} y p\left( x, y, z \right) ds \\
+      \overline{z} &= \frac{1}{m} \int_{c} z p\left( x, y, z \right) ds
+    \end{align}

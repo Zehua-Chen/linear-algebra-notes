@@ -39,7 +39,14 @@
   \subsection{Trignometries}
 
     \begin{align}
-      \cos^{2}\left( x \right) + \sin^{2}\left( x \right) &= 1, x \in \mathbb{R}
+      \cos^{2}\left( x \right) + \sin^{2}\left( x \right) &= 1, x \in \mathbb{R} \\
+      \sin\left( 2x \right) &= 2 \sin\left( x \right) \cos\left( x \right) \\
+      \cos\left( 2x \right)
+        &= \cos^{2}\left( x \right) - \sin^{2}\left( x \right) \\
+        &= 1 - 2\sin^{2}\left( x \right) \\
+        &= 2\cos^{2}\left( x \right) - 1 \\
+      \tan\left( 2x \right)
+        &= \frac{2\tan\left( x \right)}{1 - \tan^{2}\left( x \right)}
     \end{align}
 
   \subsection{Integration}
@@ -63,3 +70,12 @@
         &= \int \left( 3x^{2} + 2x \right) e^{u} \frac{du}{3x^{2} + 2x} \\
         &= \int e^{u} du
       \end{align*}
+
+      When dealing with definite integrals, be sure to replace $ a, b $ with
+      $ u\left( a \right), u\left( b \right) $
+
+    \subsubsection{Integration by Parts}
+
+      \begin{equation}
+        \int u dv = uv - \int v du
+      \end{equation}
