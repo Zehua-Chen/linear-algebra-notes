@@ -1,0 +1,29 @@
+\section{Vector Fields}
+
+  For $ \mathbb{R}^{2} $, a vector field is a function
+  $ f: \mathbb{R}^{2} \to \mathbb{R}^{2} $
+  \begin{itemize}
+    \item Input are coordinates on the grpah
+    \item Output are the vectors are the coordinates
+  \end{itemize}
+
+  \subsection{Conservative Vector Fields}
+
+    When $ \vec{F} = \nabla f $ we call $ f $ a potential function
+    for $ \vec{F} $ and we say $ \vec{F} $ is a conservative vector field
+
+  \subsection{Integration}
+
+    Given
+    \begin{itemize}
+      \item $ C $: a curve in $ \mathbb{R}^{2} $
+      \item $ \vec{F}: \mathbb{R}^{2} \to \mathbb{R}^{2} $: a vector field
+      \item $ \vec{r}\left( a, b \right) \to \mathbb{R} $, a parameterization
+      of $ C $
+    \end{itemize}
+
+    \begin{equation}
+      \int_{C} \vec{F} d\vec{r}
+        = \int_{a}^{b} \vec{F}\left( \vec{r} \left( t \right) \right)
+        \cdot \vec{r}'\left( t \right) dt
+    \end{equation}
