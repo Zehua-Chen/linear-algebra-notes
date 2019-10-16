@@ -7,6 +7,19 @@
     \item Output are the vectors are the coordinates
   \end{itemize}
 
+  \subsection{Curve in Vector Field}
+
+    If we represent $ C $ as
+    \begin{align*}
+      \vec{r}\left( t \right)
+        &= \left( x\left(t\right), y\left(t\right) \right) \\
+        &= x\left( t \right) \vec{i} + y\left( t \right) \vec{j} \\
+      \vec{F}\left( x, y \right)
+        &= P\left( x, y \right) \vec{l} + Q\left( x, y \right) \vec{j}
+    \end{align*}
+
+    $ P, Q $ describe the two components of a vector based on point.
+
   \subsection{Conservative Vector Fields}
 
     When $ \vec{F} = \nabla f $ we call $ f $ a potential function
@@ -22,8 +35,15 @@
       of $ C $
     \end{itemize}
 
-    \begin{equation}
+    \begin{align}
       \int_{C} \vec{F} d\vec{r}
-        = \int_{a}^{b} \vec{F}\left( \vec{r} \left( t \right) \right)
-        \cdot \vec{r}'\left( t \right) dt
-    \end{equation}
+        &= \int_{a}^{b} \vec{F}\left( \vec{r} \left( t \right) \right)
+        \cdot \vec{r}'\left( t \right) dt \\
+        &= \int_{C} P dx + Q dy
+    \end{align}
+
+    \subsubsection{Integration and Tangent Vector}
+
+      \begin{equation}
+        \int_{C} \vec{F} \cdot d \vec{r} = \int_{C} \vec{F} \cdot \vec{T} ds
+      \end{equation}
