@@ -44,6 +44,38 @@
 
     \subsubsection{Integration and Tangent Vector}
 
-      \begin{equation}
-        \int_{C} \vec{F} \cdot d \vec{r} = \int_{C} \vec{F} \cdot \vec{T} ds
-      \end{equation}
+      \begin{align*}
+        \vec{T} &= \frac{\vec{r}'\left( t \right)}{\left| \vec{r}'\left( t \right) \right|} \\
+        ds &= \vec{r}'\left( t \right)
+      \end{align*}
+
+      \begin{align*}
+        \int_{C} \vec{F} \cdot d \vec{r}
+        &= \int_{C} \vec{F} \cdot \vec{T} ds \\
+        &= \int_{C} \vec{F} \cdot \vec{T} \frac{\left| \vec{r}'\left( t \right) \right| dt}{ds}
+      \end{align*}
+
+  \subsection{Conservative}
+
+    A vector field is conservative if
+
+    \begin{align}
+      \vec{F} &= \nabla f \\
+      \int_{c} \vec{F} \cdot d \vec{r} &= f\left( B \right) - f\left( A \right)
+    \end{align}
+
+    where $ A, B $ are points in the vector field.
+
+  \subsection{Open and Simply Connected}
+
+    \begin{itemize}
+      \item \textbf{Open}: an open shape is a shape such that you
+      can find a radius and a point in the shape and draw a circle
+      and the circle is in the shape
+      \item \textbf{Connected}:
+      \item \textbf{Simply Connected}:
+    \end{itemize}
+
+    \begin{equation}
+      \frac{dP}{dy} = \frac{dQ}{dx}
+    \end{equation}
