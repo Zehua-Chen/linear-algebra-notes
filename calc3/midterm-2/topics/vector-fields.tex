@@ -52,7 +52,7 @@
 
   \subsection{Conservative}
 
-    A vector field is conservative if
+    If a vector field $ \vec{F} $ is conservative:
 
     \begin{align}
       \vec{F} &= \nabla f \\
@@ -61,29 +61,67 @@
 
     where $ A, B $ are points in the vector field.
 
-    When $ \vec{F} = \nabla f $ we call $ f $ a potential function
-    for $ \vec{F} $ and we say $ \vec{F} $ is a conservative vector field
-
-    \subsubsection{Find f from F}
-
-      Given $ F = ai + bj $
-
-      \begin{enumerate}
-        \item Since $ \nabla f = F $, we know $ f_{x} = a $  and
-        $ f_{y} = b $
-        \item Integrate $ f_{x}, f_{y} $
-      \end{enumerate}
-
-  \subsection{Open and Simply Connected}
-
     \begin{itemize}
-      \item \textbf{Open}: an open shape is a shape such that you
-      can find a radius and a point in the shape and draw a circle
-      and the circle is in the shape
-      \item \textbf{Connected}:
-      \item \textbf{Simply Connected}:
+      \item When $ \vec{F} = \nabla f $ we call $ f $ a potential function
+      for $ \vec{F} $ and we say $ \vec{F} $ is a conservative vector field
     \end{itemize}
 
-    \begin{equation}
-      \frac{dP}{dy} = \frac{dQ}{dx}
-    \end{equation}
+    \paragraph{Find f from F}
+    Given $ F = ai + bj $
+
+    \begin{enumerate}
+      \item Since $ \nabla f = F $, we know $ f_{x} = a $  and
+      $ f_{y} = b $
+      \item Integrate $ f_{x}, f_{y} $
+    \end{enumerate}
+
+    \subsubsection{Open and Connected}
+
+      \begin{itemize}
+        \item \textbf{Open}: an open shape is a shape such that you
+        can find a radius and a point in the shape and draw a circle
+        and the circle is in the shape
+        \item \textbf{Connected}: for any two points in the shape, there is a
+        curve that connects the two points
+        \item \textbf{Simply Connected}: for any two points in the shape,
+        there is a straight line that connects the two points
+      \end{itemize}
+
+      \begin{equation}
+        \frac{dP}{dy} = \frac{dQ}{dx}
+      \end{equation}
+
+    \subsubsection{Path Independence}
+
+      Given a vector field $ F $ and two different curves
+      $ C_{1}, C_{2} $ that start and end at the same points $ A $ and $ B $,
+      the vector field is independent if
+
+      \begin{equation}
+        \int_{C_{1}} F \cdot ds = \int_{C_{2}} F \cdot ds
+      \end{equation}
+
+    \subsubsection{Theorem A}
+
+      A vector field $ \vec{F} $ on an \ul{open} and \ul{connected} region
+      $ D $ in $ \mathbb{R}^{2} $ is conservative if and only if
+      \begin{displaymath}
+        \int_{C} \vec{F} \cdot d\vec{r}
+      \end{displaymath}
+      is path independent.
+
+      \begin{itemize}
+        \item Works with $ \mathbb{R}^{n} $
+      \end{itemize}
+
+    \subsubsection{Theorem B}
+
+      $ \vec{F}\left( P, Q \right) $ on a simply connected open $ D $
+      in $ \mathbb{R}^{2} $ is conservative if and only if
+      \begin{equation}
+        \frac{dP}{dy} = \frac{dQ}{dx}
+      \end{equation}
+
+      \begin{itemize}
+        \item Have more complicated versions for $ \mathbb{R}^{n} $
+      \end{itemize}
