@@ -56,7 +56,7 @@
 
     \begin{align}
       \vec{F} &= \nabla f \\
-      \int_{c} \vec{F} \cdot d \vec{r} &= f\left( B \right) - f\left( A \right)
+      \int_{C} \vec{F} d \vec{r} &= \int_{C} \nabla f d\vec{r}
     \end{align}
 
     where $ A, B $ are points in the vector field.
@@ -125,3 +125,17 @@
       \begin{itemize}
         \item Have more complicated versions for $ \mathbb{R}^{n} $
       \end{itemize}
+
+  \subsection{Fundamental Theorem of Line Integral}
+
+    \begin{equation}
+      \int_{C} \vec{F} \cdot d \vec{r} = f\left( B \right) - f\left( A \right)
+    \end{equation}
+
+    If a vector field is conservative, then
+
+    \begin{align}
+      \int_{C} \vec{F} \cdot d \vec{r}
+        &= \int_{C} \nabla f \cdot d \vec{r} \\
+        &= f\left( B \right) - f\left( A \right)
+    \end{align}
