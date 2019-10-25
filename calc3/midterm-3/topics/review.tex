@@ -1,0 +1,51 @@
+\section{Review}
+
+  \subsection{Integration}
+
+    \subsubsection{U-Subtitution}
+
+      \begin{displaymath}
+        \int \left( 3x^{2} + 2x \right) e^{\left( x^{3} + x^{2} \right)} dx
+      \end{displaymath}
+
+      \begin{align*}
+        u &= x^{3} + x^{2} \\
+        du &= 3x^{2} + 2x dx \\
+        \frac{du}{3x^{2} + 2x} &= dx
+      \end{align*}
+
+      Plugin $ u $ and $ dx $ back in
+
+      \begin{align*}
+        &\int \left( 3x^{2} + 2x \right) e^{\left( x^{3} + x^{2} \right)} dx \\
+        &= \int \left( 3x^{2} + 2x \right) e^{u} \frac{du}{3x^{2} + 2x} \\
+        &= \int e^{u} du
+      \end{align*}
+
+      When dealing with definite integrals, be sure to replace $ a, b $ with
+      $ u\left( a \right), u\left( b \right) $
+
+    \subsubsection{Integration by Parts}
+
+      \begin{equation}
+        \int u dv = uv - \int v du
+      \end{equation}
+
+  \subsection{Estimation}
+
+    \subsubsection{Riemann Sum}
+
+      \begin{itemize}
+        \item Consider the area under a curve as being made up of small rectangles.
+        \item Take height of either the top left or top right corner and
+        multiply the height by the width of the rectangles to get the areas
+        \item Sum all the areas to get the area under the curve
+      \end{itemize}
+
+    \subsubsection{Midpoint Rule}
+
+      \begin{itemize}
+        \item Similar to rieman sum, but take the top middle of the rectangles
+        to get the height, which is then used to calculate the area of the
+        rectangles
+      \end{itemize}
