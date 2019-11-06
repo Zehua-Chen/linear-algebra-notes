@@ -1,0 +1,62 @@
+\section{Cylindrical and Spherical Coordinates}
+
+  \subsection{Cylindrical Coordinates}
+
+    \begin{equation}
+      \left( r, \theta, z \right)
+    \end{equation}
+
+    \begin{align}
+      x &= r \cos\theta \\
+      y &= r \sin\theta \\
+      z &= z
+    \end{align}
+
+    \begin{equation}
+      a \times r \cos\theta + b \times r \sin\theta = c
+    \end{equation}
+
+  \subsection{Spherical Coordinates}
+
+    \begin{equation}
+      \left( \rho, \theta, \varphi \right)
+    \end{equation}
+
+    \begin{align}
+      x &= \rho \sin\varphi \cos\theta \\
+      y &= \rho \sin\varphi \sin\theta \\
+      z &= \rho \cos\varphi \\
+      x^{2} + y^{2} + z^{2} &= \rho^{2}
+    \end{align}
+
+  \subsection{Transformation Matrix}
+
+    Given
+    \begin{align*}
+      a x + b y &= ? \\
+      c u + d v &= ?
+    \end{align*}
+
+    \begin{equation}
+      \begin{bmatrix}
+        a & b \\
+        c & d \\
+      \end{bmatrix}
+    \end{equation}
+
+    \begin{itemize}
+      \item Describes how the area is distorted with the transformation
+    \end{itemize}
+
+    \subsubsection{Jacobian}
+
+      \begin{align}
+        J &= \left| \frac{\delta\left( x, y \right)}{\delta\left( u, v \right)} \right| \\
+        &=
+        \left|
+          \begin{bmatrix}
+            \frac{\delta x}{\delta u} & \frac{\delta x}{\delta v} \\
+            \frac{\delta y}{\delta u} & \frac{\delta y}{\delta v} \\
+          \end{bmatrix}
+        \right|
+      \end{align}
