@@ -21,3 +21,33 @@
       \int_{c}^{d} \left( \int_{a}^{b} f\left( x, y \right) dx \right) dy
         = \int_{a}^{b} \left( \int_{c}^{d} f\left( x, y \right) dy \right) dx
     \end{equation}
+
+  \subsection{Contour Integrals}
+
+    Given a vector function
+    \begin{displaymath}
+      F\left( x, y \right) = \left( P\left( x, y \right) + Q\left( x, y \right) \right)
+    \end{displaymath}
+
+    the contour integral of this vector function will be
+    \begin{equation}
+      \oint P dx + Q dy
+    \end{equation}
+
+    \subsubsection{Points/Lines and Contour Integrals}
+
+      Given some points, and evaluate the contour integral
+
+      \begin{displaymath}
+        \oint ... dx + ... dy
+      \end{displaymath}
+
+      \begin{enumerate}
+        \item Derive lines from the points (pay attention to direction,
+        \textbf{conterclockwise} or \textbf{clockwise})
+        \item If $ x $ does not change from one end of the lines to the other
+        end, then plugin $ x $ as if they are numbers, and $ dx = 0 $
+        \item If $ y $ does not change from one end of the lines to the other
+        end, then plugin $ y $ as if they are numbers, and $ dy = 0 $
+        \item Sum the results from all lines
+      \end{enumerate}
