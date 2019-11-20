@@ -8,8 +8,8 @@
   \begin{equation}
     A\left( D \right) = \int_{C} \vec{F} \cdot d\vec{r} =
     \begin{cases}
-      \int \int_{D} \frac{dQ}{dx} - \frac{dP}{dx} dA, \text{clockwise} \\
-      - \int \int_{D} \frac{dQ}{dx} - \frac{dP}{dx} dA, \text{counter-clockwise}
+      \int \int_{D} \frac{dQ}{dx} - \frac{dP}{dy} dA, \text{counter-clockwise} \\
+      - \int \int_{D} \frac{dQ}{dx} - \frac{dP}{dy} dA, \text{clockwise}
     \end{cases}
   \end{equation}
 
@@ -27,3 +27,28 @@
       \left( x_{n} y_{1} - x_{1} y_{n} \right)
     \right]
   \end{align}
+
+  \subsection{Theorem A}
+
+    $ \vec{F} $ on a connected open set $ D $, in $ \mathbb{R}^{2} $,
+    is conservative if and only if
+
+    \begin{equation}
+      \int_{C} \vec{F} \cdot d\vec{r} = 0
+    \end{equation}
+
+    for every closed curve $ C $ in $ D $.
+
+  \subsection{Theorem B}
+
+    If $ D $ in $ \mathbb{R} $ is simply connected, then
+
+    \begin{equation}
+      \vec{F} = \left( P, Q \right)
+    \end{equation}
+
+    is conservative if and ony if
+
+    \begin{equation}
+      \frac{dQ}{dx} = \frac{dP}{dy}
+    \end{equation}
