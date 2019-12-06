@@ -1,0 +1,36 @@
+\section{Stokes Theorem}
+
+  Geometrically, curl is \ul{if a stick is positioned into a vector field,
+  in which direction would it spin?}: \textbf{positive, negative, zero.}
+
+  \begin{align}
+    \curl \vec{F} = \div \times F &=
+    \left|
+      \begin{bmatrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        \frac{d}{dx} & \frac{d}{dy} & \frac{d}{dz} \\
+        P & Q & R
+      \end{bmatrix}
+    \right| \\
+    &=
+    \left(
+      \frac{dR}{dy} - \frac{dQ}{dz},
+      \frac{dR}{dx} - \frac{dP}{dz},
+      \frac{dQ}{dx} - \frac{dP}{dy},
+    \right)
+  \end{align}
+
+  \begin{itemize}
+    \item Curls in the same vector field can cancel out each other
+  \end{itemize}
+
+  \begin{align}
+    \int_{C} \vec{F} \cdot d \vec{r}
+    &= \int \int_{S} \left( \curl \vec{F} \cdot \vec{n} \right) ds \\
+    &= \int \int_{S} \curl\vec{F} d\vec{s}
+  \end{align}
+
+  \begin{itemize}
+    \item Curls calculation gives a vector field and can only be applied
+    with vector fields
+  \end{itemize}
